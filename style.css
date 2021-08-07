@@ -154,7 +154,7 @@ dd.col{
     font-size:large;
 }
 
-h3,h4,h5{
+h1,h2,h3,h4,h5{
     font-family: 'Kanit', sans-serif;
 }
 #para h5, #para p{
@@ -182,6 +182,7 @@ h3,h4,h5{
     transform: translateY(-1%);
     transition: 0.5s;
 }
+
 .green{
     width: 20vw;
     background-color: green;
