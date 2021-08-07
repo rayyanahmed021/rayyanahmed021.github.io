@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>
+            Portfolio
+        </title>
+    </head>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+<script src="./index.js"></script>
+    <body>
+        <div id="wholeprofile">
+        <div id="pic">
+            <img src="./Untitled.png" alt="pic" height="70%"><br>
+            <p id = "name">Rayyan Ahmed</p>
+            <p>Aspiring Blockchain Developer</p><br>
+            <button class="btn btn-dark" id = "white">Resume</button>
+            <button class="btn btn-dark" id = "black">Contact Me</button>
+            
+        </div>
+
+        </div><br>
+        <div id="info">
+            <div id="about" class = "common">
+                 <h3>About me</h3><br>
+                 <p>Highly organized and detail-oriented second-semester student from Seneca College seeking an entry-level position as a programmer.
+                    With a CPGA of 4.0, I am constantly striving to achieve my career goal of pursuing blockchain development.
+                    Having the experience of developing multiple,extensive team-oriented projects, I am looking to enhance and explore my technical knowledge gained at Seneca College for the past two years.   
+                    
+        </p>
+            </div>
+            <div id="para" class = "common">
+                <h3>Basic Information</h3><br>
+                <div id="every">
+                <dl class="row">
+                    <dt class="col"><h5>Age:</h5></dt>
+                    <dd class="col">18</dd>
+                  </dl>
+                  <dl class="row">
+                    <dt class="col"><h5>Nationality:</h5></dt>
+                    <dd class="col">Canadian</dd>
+                  </dl>
+                  <dl class="row">
+                      <dt class="col"><h5>Language:</h5></dt>
+                      <dd class="col">English, Arabic, Urdu</dd>
+                    </dl>
+                    <dl class="row">
+                      <dt class="col"><h5>Email:</h5></dt>
+                      <dd class="col">rahmed102@myseneca.ca</dd>
+                    </dl>
+                  
+            </div>
+            </div> 
+            
+        </div><br>
+        <div id="education">
+            <h2 style="text-align: center;">Education</h2> <br>
+            <div id="all">
+            <div class="green">
+                <h4>2021-2023 (expected)</h4>
+                <h1>College Diploma</h1>
+            </div>
+            <div class="detail">
+                <h2>College Diploma</h2>
+                <h3>Seneca College</h3>
+                <p>Under the supervision of Kathleen Dumansky. <br>
+                Acheived a CGPA of 4.0 <br>
+                    Been on the President's list for two consecutive semesters. <br>
+                    
+            </p>
+            </div>
+            
+        </div>
+        <br><br>
+        <div id="all1">
+            <div class="green">
+                <h3>2018-2020</h3>
+                <h1>High School Diploma</h1>
+            </div>
+            <div class="detail">
+                <h2>High School Diploma</h2>
+                <h3>Happy Home School</h3>
+                <p>Under the supervision of Farah Ahmed. <br>
+                Acheived 9 A*'s and 1 A in 10 subjects <br>
+                    Awarded with the best academic performance.<br>
+            </p>
+            </div>
+        </div>
+        </div><br><br><br>
+        <h2 style="text-align: center;">Contact me</h2><br>
+        <div id="form">
+            <form action="https://httpbin.org/post" method="POST">
+                <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-lg">Name</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control form-control-lg" id="colFormLabelSm" placeholder="Name" pattern = "[a-zA-Z]{1,}" required>
+                </div>
+                </div><br>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                    <div class="col-sm-10">
+                    <input type="email" class="form-control form-control-lg" id="staticEmail" placeholder="example@gmail.com" required>
+                    </div>
+                    </div><br>
+                    <div class="form-group row">
+                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-lg">Address</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control form-control-lg" id="colFormLabelSm" placeholder="#house, # street " pattern = "[a-zA-Z]{1,}" required>
+                        </div>
+                        </div><br>
+                        
+                    <div class="row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg" for="customRadioInline2">City</label>
+                        <div class="col">
+                            <input type="text" class="form-control form-control-lg"  list="city" name="cities" placeholder="City" pattern = "[a-zA-Z]{1,}" required>
+                            <datalist id="city" >
+                                <option value="Toronto">
+                                <option value="Montreal">
+                                <option value="Vancouver">
+                                <option value="Ottawa">
+                                <option value="Calgary">
+                                <option value="Quebec">
+                                <option value="Victoria">
+                            </datalist>
+                        </div>
+                        <label class="col-sm-2 col-form-label col-form-label-lg" for="customRadioInline2">Postal Code</label>
+                        <div class="col">
+                          <input type="text" class="form-control form-control-lg" placeholder="Postal Code"  pattern = "[A-Z][0-9][A-Z] ?[0-9][A-Z][0-9]"required>
+                        </div>
+                      </div><br>
+                            <div id="a" >
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="further" class="custom-control-input" required>
+                                <label class="col-sm-2 col-form-label col-form-label-lg" for="customRadioInline1">Question</label>
+                              </div>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="further" class="custom-control-input">
+                                <label class="col-sm-2 col-form-label col-form-label-lg" for="customRadioInline2">Comment</label>
+                              </div>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline3" name="further" class="custom-control-input">
+                                <label class="col-sm-2 col-form-label col-form-label-lg" for="customRadioInline2">Hiring</label>
+                              </div>
+                            </div>
+                            <div class="form-group row" id = "dynamo">
+                            <div id="dynamic" class="col-sm-10">
+                            
+                            </div>
+                            </div>
+                            <br><button type="submit"  class = "btn btn-dark">Submit the form</button>
+            </form>
+        </div><br><br>
+    </body>
+</html>
