@@ -1,5 +1,5 @@
 #pic{
-    height: 85vh;
+    height: fit-content;
     width: 90vw;
     
 }
@@ -45,7 +45,7 @@ button#black:hover{
     margin: auto;
     box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
     flex-wrap: wrap;
-    
+    height: min-content;
     max-width: 1100px;
     /* flex-direction: row; */
 }
@@ -116,7 +116,7 @@ button#black:hover{
     /* box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important */
 }
 div#every{
-    padding-right: 4vw;
+    padding-right: 3vw;
     
 }
 #about{
@@ -137,6 +137,7 @@ div#every{
 }
 #para{
     padding: 4vw 0vw 4vw 0vw;
+    height: fit-content;
 }
 /* #every{
     display: flex;
@@ -167,6 +168,7 @@ h3,h4,h5{
     /* background-color: #5865F2; */
     max-width:fit-content;
     margin: auto;
+    height: fit-content;
 }
 #all,#all1{
     display: flex;
@@ -183,7 +185,7 @@ h3,h4,h5{
 .green{
     width: 20vw;
     background-color: green;
-    height: 25vh;
+    /* height: fit-content; */
     text-align: center;
     padding: 2vw;
     color: white;
@@ -196,7 +198,7 @@ h3,h4,h5{
 .detail{
     width: 70vw;
     max-width: 855.55px;
-    height: 25vh;
+    height: fit-content;
     padding: 2vw;
     /* background-color: aquamarine; */
 }
