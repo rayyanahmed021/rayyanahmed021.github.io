@@ -183,6 +183,7 @@ h3,h4,h5{
     padding: 2vw;
     color: white;
     max-width: 244.4px;
+    vertical-align: middle;
 }
 /* #education{
     position: relative;
