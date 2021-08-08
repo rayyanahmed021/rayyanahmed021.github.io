@@ -52,9 +52,6 @@ button#black:hover{
 #para{
     max-width: 550px;
 }
-.common{
-    height: fit-content;
-}
 #info:hover{
     transform: translateY(-1%);
     transition: 0.5s;
@@ -134,7 +131,7 @@ div#every{
 .common{
     /* width: 40vw; */
     
-    height: 50vh;
+    height: fit-content;
     /* padding: 5vw; */
     
 }
