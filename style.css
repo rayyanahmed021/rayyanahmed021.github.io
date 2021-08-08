@@ -52,6 +52,9 @@ button#black:hover{
 #para{
     max-width: 550px;
 }
+.common{
+    height: fit-content;
+}
 #info:hover{
     transform: translateY(-1%);
     transition: 0.5s;
