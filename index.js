@@ -56,6 +56,7 @@ radio1.onclick = function(){
    input.value = ""
    input.placeholder = "Type your hiring rate per hour"
    input.type = "number"
+   input.step = "0.01"
    var div = document.getElementById("dynamic")
    div.innerHTML = ""
    label.innerHTML = ""
