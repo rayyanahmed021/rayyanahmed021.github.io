@@ -93,28 +93,28 @@
         <div id="form">
             <form action="https://httpbin.org/post" method="POST">
                 <div class="form-group row">
-                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-lg">Name</label>
+                <label for="Name" class="col-sm-2 col-form-label col-form-label-lg">Name</label>
                 <div class="col-sm-10">
-                <input type="text" name = "Name" class="form-control form-control-lg" id="colFormLabelSm" placeholder="Name" pattern = "[a-zA-Z ]{1,}" required>
+                <input type="text" name = "Name" class="form-control form-control-lg" id="Name" placeholder="Name" pattern = "[a-zA-Z ]{1,}" required>
                 </div>
                 </div><br>
-                <div class="form-group row">
-                    <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                <div class="row">
+                    <label for="Email" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
                     <div class="col-sm-10">
-                    <input type="email"  name = "Email" class="form-control form-control-lg" id="staticEmail" placeholder="example@gmail.com" required>
+                    <input type="email"  name = "Email" class="form-control form-control-lg" id="Email" placeholder="example@gmail.com" required>
                     </div>
                     </div><br>
-                    <div class="form-group row">
-                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-lg">Address</label>
+                    <div class="row">
+                        <label for="Address" class="col-sm-2 col-form-label col-form-label-lg">Address</label>
                         <div class="col-sm-10">
-                        <input type="text"  name = "Address" class="form-control form-control-lg" id="colFormLabelSm" placeholder="#house, # street " pattern = "[a-zA-Z,0-9- ]{1,}" required>
+                        <input type="text"  name = "Address" class="form-control form-control-lg" id="Address" placeholder="#house, #street " pattern = "[a-zA-Z,0-9- ]{1,}" required>
                         </div>
                         </div><br>
                         
                     <div class="row">
-                        <label class="col-sm-2 col-form-label col-form-label-lg" for="customRadioInline2">City</label>
+                        <label class="col-sm-2 col-form-label col-form-label-lg" for="city">City</label>
                         <div class="col">
-                            <input type="text" class="form-control form-control-lg"  list="city" name="cities" placeholder="City" pattern = "[a-zA-Z]{1,}" required>
+                            <input type="text" class="form-control form-control-lg"  id = "city" list="city" name="cities" placeholder="City" pattern = "[a-zA-Z]{1,}" required>
                             <datalist id="city" >
                                 <option value="Toronto">
                                 <option value="Montreal">
@@ -125,28 +125,27 @@
                                 <option value="Victoria">
                             </datalist>
                         </div>
-                        <label class="col-sm-2 col-form-label col-form-label-lg" for="customRadioInline2">Postal Code</label>
+                        <label class="col-sm-2 col-form-label col-form-label-lg" for="Postal Code">Postal Code</label>
                         <div class="col">
-                          <input type="text"  name = "Postal Code" class="form-control form-control-lg" placeholder="Postal Code"  pattern = "[A-Z][0-9][A-Z] ?[0-9][A-Z][0-9]"required>
+                          <input type="text"  name = "Postal Code" id = "Postal Code" class="form-control form-control-lg" placeholder="Postal Code"  pattern = "[A-Z][0-9][A-Z] ?[0-9][A-Z][0-9]"required>
                         </div>
                       </div><br>
                             <div id="a" >
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline1" name="further" class="custom-control-input" value="Question" required>
-                                <label class="col-sm-2 col-form-label col-form-label-lg" for="customRadioInline1">Question</label>
+                                <input type="radio" id="Question" name="further" class="custom-control-input" value="Question" required>
+                                <label class="col-sm-2 col-form-label col-form-label-lg" for="Question">Question</label>
                               </div>
                               <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline2" name="further" class="custom-control-input" value="Comment">
-                                <label class="col-sm-2 col-form-label col-form-label-lg" for="customRadioInline2">Comment</label>
+                                <input type="radio" id="Comment" name="further" class="custom-control-input" value="Comment">
+                                <label class="col-sm-2 col-form-label col-form-label-lg" for="Comment">Comment</label>
                               </div>
                               <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline3" name="further" class="custom-control-input" value="Hiring">
-                                <label class="col-sm-2 col-form-label col-form-label-lg" for="customRadioInline2">Hiring</label>
+                                <input type="radio" id="Hiring" name="further" class="custom-control-input" value="Hiring">
+                                <label class="col-sm-2 col-form-label col-form-label-lg" for="Hiring">Hiring</label>
                               </div>
                             </div>
-                            <div class="form-group row" id = "dynamo">
-                            <div id="dynamic" class="col-sm-10">
-                            
+                            <div class="row" id = "dynamo">
+                            <div id="dynamic" class="col-sm-10">                            
                             </div>
                             </div>
                             <br><button type="submit"  class = "btn btn-dark">Submit the form</button>
