@@ -6,22 +6,57 @@
     </head>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+<link href="../../../Downloads/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
 <script src="./index.js"></script>
-    <body>
+
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi me-2" width="40" height="32" viewBox="0 0 16 16">
+              <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"></path>
+            </svg>
+              <span class="fs-4">Rayyan Ahmed</span>
+            </a>
+            <ul class="nav nav-pills flex-wrap justify-content-center">
+
+              <li class="nav-item">
+                  <a class="nav-link" href="#info">About Me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#form">Contact Me</a>
+              </li>
+          </ul>
+        </header>
+<body>
+    <div id="sec1">
         <div id="wholeprofile">
         <div id="pic">
-            <img src="./Untitled.png" alt="pic" height="70%"><br>
-            <p id = "name">Rayyan Ahmed</p>
-            <p>Aspiring Blockchain Developer</p><br>
-            <button class="btn btn-dark" id = "white">Resume</button>
-            <a href="#form"><button class="btn btn-dark" id = "black" >Contact Me</button></a>
-            <br><br><br>
+            <img src="./pic.jpg" id = "profile" alt="pic" width ="100%">
+            
         </div>
+        
+        <!-- <div style="text-align: right;  background-color:aqua;"> -->
+        <div id = "more">
+            <p id = "name">Hi! I am Rayyan Ahmed.</p>
+            <p style="font-size:x-large;">Aspiring Software Developer</p><br><br>
+            <button class="btn btn-dark btn-lg" id = "white">Resume</button>
+            <a href="#form"><button class="btn btn-dark btn-lg" id = "black" >Contact Me</button></a>
+            <!-- <br><br><br> -->
+        </div>
+        </div></div><br>
 
-        </div><br>
+
+
+
         <div id="info">
             <div id="about" class = "common">
                  <h3>About me</h3><br>
@@ -56,7 +91,7 @@
             
         </div><br>
         <div id="education">
-            <h2 style="text-align: center;">Education</h2> <br>
+            <h2 id = "head" style="text-align: center;color: azure;">Education</h2> <br>
             <div id="all">
             <div class="green">
                 <h4>2021-2023 (expected)</h4>
@@ -64,11 +99,11 @@
             </div>
             <div class="detail">
                 <h2>College Diploma</h2>
-                <h3>Seneca College</h3>
+                <h3>Seneca College, Canada</h3>
                 <p>Under the supervision of Kathleen Dumansky. <br>
-                Acheived a CGPA of 4.0 <br>
-                    Been on the President's list for two consecutive semesters. <br>
-                    
+                    Acheived a GPA of 4.0 <br>
+                    Mentioned on the President's list for two consecutive semesters. <br>
+                    Second in the Seneca Digital Hackathon 2021 <br>
             </p>
             </div>
             
@@ -81,15 +116,58 @@
             </div>
             <div class="detail">
                 <h2>High School Diploma</h2>
-                <h3>Happy Home School</h3>
+                <h3>Happy Home School, Pakistan</h3>
                 <p>Under the supervision of Farah Ahmed. <br>
                 Acheived 9 A*'s and 1 A in 10 subjects <br>
                     Awarded with the best academic performance.<br>
+                    Captian of School's basketball and soccer teams. <br>
+
             </p>
             </div>
         </div>
         </div><br><br><br>
-        <h2 style="text-align: center;">Contact me</h2><br>
+        <div id="project">
+          <h2 id = "proj-head">Projects</h2>
+          <div class="container">
+            <div class="timeline">
+                  <ul>
+                    <li id = "tic-tac-toe">
+                      <div class="timeline-content">
+                        <h1 style="display:flex;justify-content: space-between;"><a href="https://github.com/rayyanahmed021/tic-tac-toe" > AI tic-tac-toe </a>
+                          <span><i id = "1" class="arrow up"></i></span>
+                        </h1>
+                        <p id="tic" class = "para">a captivating game where a user is challenged to compete against Artificial computer programmed with a promising capability to strategize its tactics to win the game. Using <u>C++</u> and <u>Oracle</u> as a database, a key component is the account registration system which tracks the wins and losses to determine the rank in the scoreboard. </p>
+                      </div>
+                    </li>
+                    <li id = "customer">
+                      <div class="timeline-content">
+                        <h1 style="display:flex;justify-content: space-between;"><a href="https://github.com/rayyanahmed021/Customer-Service-Management-system">Customer Service Management System</a>
+                          <span><i id = "2" class="arrow up"></i></span> </h1>
+                        <p id = "cust" class = "para">an interactive application that manipulates files for archiving and loading data in pure <u>C language</u> and features two distinct interfaces: one for customers and one for employees. Employees operate on an administrative interface to view all the customer complaints and modify customer accounts while customers are privileged to launch complaints and modify account details. The application allows a full-length conversation between customers and employees regarding the issue. </p>
+                      </div>
+                    </li>
+                    <li id = "Hospital">
+                      <div class="timeline-content">
+                        <h1 style="display:flex;justify-content: space-between;"><a href="https://github.com/rayyanahmed021/General-Hospital-Pre-Triage-Application">General Hospital Pre-Triage application</a>
+                          <span><i id = "3" class="arrow up"></i></span>
+                        </h1>
+                        <p id = "hos" class = "para">an encapsulated and real-world application in <u>C++</u> using multi-level inheritance and polymorphic objects to serve the needs of the pandemic. This application registers, admits, and books appointments for different types of patients: a covid or triage patient. </p>
+                      </div>
+                    </li>
+                    <li id = "learning">
+                      <div class="timeline-content">
+                        <h1 style="display:flex;justify-content: space-between;"><a href="https://github.com/rayyanahmed021/Online-learning-platform">Online Learning Platform</a>
+                          <span><i id = "4" class="arrow up"></i></span>
+                        </h1>
+                        <p id = "learn" class = "para">A 3-tier architecture website using <u>Django</u> as a database, <u>python</u> for constructing API routes, and <u>JavaScript</u> for dynamic user interface. It’s about online courses featuring two separate interfaces: one for professors and one for students. For students, they can enroll in courses, ask queries regarding specific posted lectures, and receive responses from the professors. As for professors, they can create new courses, upload lectures, and receive queries from the batch of students.</p>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <h2 style="text-align: center;color: white;">Contact me</h2><br>
         <div id="form">
             <form action="https://httpbin.org/post" method="POST">
                 <div class="form-group row">

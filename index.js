@@ -64,6 +64,43 @@ radio1.onclick = function(){
    parentdiv.insertBefore(label,parentdiv.firstChild)
    div.appendChild(input)
  }
+ var h1 = document.getElementById("tic-tac-toe")
+ var h2 = document.getElementById("customer")
+ var h3 = document.getElementById("Hospital")
+ var h4 = document.getElementById("learning")
+
+ var para1 = document.getElementById("tic")
+ var para2 = document.getElementById("cust")
+ var para3 = document.getElementById("hos")
+ var para4 = document.getElementById("learn")
+
+ var arr1 = document.getElementById("1")
+ var arr2 = document.getElementById("2")
+ var arr3 = document.getElementById("3")
+ var arr4 = document.getElementById("4")
+
+ para1.className = "unslide"
+ para2.className = "unslide"
+ para3.className = "unslide"
+ para4.className = "unslide"
  
+ h1.onclick = function () {slide(para1,arr1)};
+ h2.onclick = function () {slide(para2,arr2)};
+ h3.onclick = function () {slide(para3,arr3)};
+ h4.onclick = function () {slide(para4,arr4)};
+ 
+ function slide(para,arrow){  
+   if (para.className === "unslide"){
+    // para.style.display = "block"
+    para.className = "slide"
+    // para.style.animationName = "slide"
+    arrow.className = "arrow down"
+   }
+   else if(para.className !== "unslide"){
+    para.className = "unslide"
+    // para.style.animationName = "slide"
+    arrow.className = "arrow up"
+           }
+ }
 
 }
