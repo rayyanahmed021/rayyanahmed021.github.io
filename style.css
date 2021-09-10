@@ -119,9 +119,12 @@ button#black:hover{
     transition: 0.5s;
 }
 #resume, #contact, #submit{
-    width: 100px;
-    height: 30px;
-    border: none;
+    /* width: 100px; */
+    height: max-content;
+    width: max-content;
+
+    padding: 1vw 2vw 1vw 2vw;
+    border: thin solid white;
     border-radius: 4px;
     color: white; 
     background-color: black;
