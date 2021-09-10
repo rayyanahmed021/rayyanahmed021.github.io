@@ -282,7 +282,8 @@ dd.col{
     justify-content: center;
     box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
     width: 90vw;
-    margin: auto;  
+    margin: auto;
+    /* max-height: min-content;   */
     
 }
 #all:hover,#all1:hover{
@@ -300,7 +301,7 @@ dd.col{
     display: table-cell;
     
     vertical-align: middle;
-    height: 30vh;
+    /* height: 30vh; */
 }
 
 .detail{
@@ -308,11 +309,12 @@ dd.col{
     height: max-content;
     background-color: white;
     padding: 2vw;
-    height: 30vh;
+    /* height: 30vh; */
 }
 #all,#all1{
     max-width: 1100px;
     display: table;
+    
 }
 
 #basic{
