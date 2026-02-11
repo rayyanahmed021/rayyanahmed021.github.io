@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from "react";
-import { Briefcase, GraduationCap, Award, ExternalLink, Calendar } from "lucide-react";
+import { Briefcase, GraduationCap, Award, ExternalLink } from "lucide-react";
 import { cn } from "../../src/lib/utils";
 
 const experiences = [

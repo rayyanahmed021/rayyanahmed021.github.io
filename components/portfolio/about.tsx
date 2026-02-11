@@ -202,7 +202,7 @@ export function About() {
               <h3 className="text-[10px] font-semibold text-muted-foreground uppercase tracking-widest">Tech Stack</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              {Object.values(skills).flat().map((skill, i) => (
+              {Object.values(skills).flat().map((skill) => (
                 <span
                   key={skill}
                   className="px-2.5 py-1 text-xs rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary transition-colors cursor-default border border-white/10"

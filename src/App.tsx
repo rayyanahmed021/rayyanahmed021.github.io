@@ -5,7 +5,7 @@ import { Experience } from "../components/portfolio/experience";
 import { Projects } from "../components/portfolio/projects";
 import { Contact } from "../components/portfolio/contact";
 import { Footer } from "../components/portfolio/footer";
-import { HorizontalScrollText, ScrollRevealText, MarqueeText } from "../components/portfolio/scroll-text";
+import { HorizontalScrollText, MarqueeText } from "../components/portfolio/scroll-text";
 
 export default function Portfolio() {
   return (
