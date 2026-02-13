@@ -6,12 +6,13 @@ import { Projects } from "../components/portfolio/projects";
 import { Contact } from "../components/portfolio/contact";
 import { Footer } from "../components/portfolio/footer";
 import { HorizontalScrollText, MarqueeText } from "../components/portfolio/scroll-text";
+import LiquidEther from "./Beams"
 
 export default function Portfolio() {
   return (
     <main className="relative">
       {/* Custom cursor for desktop */}
-      {/* <CustomCursor /> */}
+      {/* <CustomCursor /> */}      
 
       {/* Noise overlay for texture */}
       <div className="noise-overlay" />

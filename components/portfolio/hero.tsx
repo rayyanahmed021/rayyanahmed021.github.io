@@ -1,15 +1,16 @@
 "use client";
 
 import React, { useRef } from "react";
-import { 
-  motion, 
-  useScroll, 
-  useTransform, 
-  useSpring, 
-  useMotionTemplate, 
-  useMotionValue 
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useSpring,
+  useMotionTemplate,
+  useMotionValue
 } from "framer-motion";
 import { Github, Linkedin, Mail, MapPin, Globe } from "lucide-react";
+import Beams from "../../src/Beams";
 
 // --- THE 3D CARD COMPONENT ---
 const FifaCard = () => {
@@ -64,16 +65,16 @@ const FifaCard = () => {
         className="relative w-full h-full transition-all duration-500 ease-out"
       >
         {/* 1. The Image */}
-        <div 
+        <div
           className="absolute inset-0 w-full h-full"
-          style={{ 
+          style={{
             transform: "translateZ(20px)",
             filter: "drop-shadow(0 20px 30px rgba(0,0,0,0.5))"
-          }} 
+          }}
         >
-          <img 
+          <img
             src="/img.png" // Ensure this is your transparent PNG
-            alt="Rayyan Ahmed FIFA Card" 
+            alt="Rayyan Ahmed FIFA Card"
             className="w-full h-full object-contain pointer-events-none"
           />
         </div>
@@ -110,7 +111,7 @@ const FifaCard = () => {
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
-  
+
   // Parallax for text
   const y1 = useTransform(scrollY, [0, 500], [0, 100]);
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
@@ -132,8 +133,19 @@ export function Hero() {
       className="relative min-h-screen w-full flex flex-col justify-center overflow-hidden bg-slate-950 text-white selection:bg-cyan-500/30 py-12 md:py-20"
     >
       {/* --- Dynamic Background --- */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
-      
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Beams
+          beamWidth={3}
+          beamHeight={30}
+          beamNumber={20}
+          lightColor="#00d5ff"
+          speed={2}
+          noiseIntensity={1.75}
+          scale={0.2}
+          rotation={30}
+        />
+      </div>
+
       <motion.div
         className="pointer-events-none absolute -inset-px opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
@@ -154,13 +166,13 @@ export function Hero() {
           3. gap-8 lg:gap-20: Tighter gap on mobile, spacious gap on desktop.
       */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-        
+
         {/* Left Column: Text Content */}
         {/* Mobile: Order 2 (Bottom), Center Aligned. Desktop: Order 1 (Left), Left Aligned */}
         <div className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-          
+
           {/* Status Badge */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -182,7 +194,7 @@ export function Hero() {
           </motion.div>
 
           {/* Bio Info */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
@@ -200,7 +212,7 @@ export function Hero() {
           </motion.div>
 
           {/* Socials */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
@@ -215,7 +227,7 @@ export function Hero() {
         {/* Right Column: FIFA Card */}
         {/* Mobile: Order 1 (Top). Desktop: Order 2 (Right) */}
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end perspective-container">
-           <FifaCard />
+          <FifaCard />
         </div>
 
       </div>
